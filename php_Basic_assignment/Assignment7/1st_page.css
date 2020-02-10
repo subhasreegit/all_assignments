@@ -1,0 +1,33 @@
+body{
+		padding:0px;
+		margin:0px;
+		background:url("pexels-photo-531880.jpeg");
+	}
+
+
+	.page1{
+		margin-top:150px;
+		margin-left:200px;
+		margin-right:850px;
+		text-align:left;
+		background-color:#dddd;
+		padding:40px;
+		box-shadow: 5px 10px 8px #888888;
+		opacity: 0.9;
+	}
+
+	.heading{
+		text-align:center;
+		padding-bottom:20px;
+	}
+	
+	#submi_t{
+		width:60px;
+		height:30px;
+		background-color:green;
+		color:white;
+		border:none;
+	}
+
+
+	
