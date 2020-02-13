@@ -1,12 +1,5 @@
 <?php
 
-spl_autoload_register(function($class) {
-    $class = str_replace('\\', '/', $class);
-    require_once('./' . $class . '.php');
-});
-
-
-
 class functions{
 
   public function position($array){           
@@ -22,7 +15,7 @@ class functions{
     }
     
     $count=count($array2);
-    for($n=1;$n<$count;$n=$n+2){
+    for($n=1;$n<$count-4;$n=$n+2){
       if($array2[$n]=='F'){
         if($array2[$n+2]=='F'){
           if($array2[$n+4]=='F'){
@@ -64,11 +57,13 @@ class functions{
       }
     }
   }
+  echo "<table border=2px>";
   for($k=0;$k<$count;$k++){
     if($k%2==0 || $k==0){
-      echo $array2[$k]."<br>";
+      echo "<td>".$array2[$k]."</td>"/*"<br>"*/;
     }
   }
+  echo "</table>";
 }
         
 }

@@ -1,8 +1,9 @@
 <?php
     
-  include('position_class.php');
-  include('seats_functions_class.php');
-  include('random_person_class.php');
+      spl_autoload_register(function($class) {
+      $class = str_replace('\\', '/', $class);
+      require_once('./' . $class . '.php');
+    });  
 
 
   $name_obj= new name();
@@ -13,8 +14,3 @@
 
   $person_obj2= new functions();
   $person_obj2->position($person_obj);
-
-            
-
-
-?>
