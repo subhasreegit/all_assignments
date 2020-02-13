@@ -1,8 +1,8 @@
-<?php
+<?php//here we are taking the output of the required field
 
-class functions{
+class functions {
 
-  public function position($array){           
+  public function position($array) { //this is given the output of the required question          
     $k=0;
     $array2=array();
     foreach($array as $key=>$value){
@@ -12,14 +12,13 @@ class functions{
           $k=$k+1;
         }
       }       
-    }
-    
+    }    
     $count=count($array2);
-    for($n=1;$n<$count-4;$n=$n+2){
-      if($array2[$n]=='F'){
-        if($array2[$n+2]=='F'){
-          if($array2[$n+4]=='F'){
-            if(($n+4)==($count-1)){
+    for($n=1;$n<$count-4;$n=$n+2) {
+      if($array2[$n]=='F') {
+        if($array2[$n+2]=='F') {
+          if($array2[$n+4]=='F') {
+            if(($n+4)==($count-1)) {
               $temp_name=$array2[0];
               $temp_gender=$array2[1];
               $array2[0]=$array2[$n+1];
@@ -27,7 +26,7 @@ class functions{
               $array2[$n+1]=$temp_name;
               $array2[$n+2]=$temp_gender;
             }
-            else{
+            else {
               $temp_name=$array2[$count1-1];
               $temp_gender=$array2[$count1];
               $array2[$count1-1]=$array2[$n+1];
@@ -36,8 +35,8 @@ class functions{
               $array2[$n+2]=$temp_gender;
              }
           }
-          else{
-            if(($n+2)==($count-2)){
+          else {
+            if(($n+2)==($count-2)) {
               $temp_name=$array2[$n+1];
               $temp_gender=$array2[$n+2];              
               $array2[$n+1]=$array2[$count-2];
@@ -45,8 +44,8 @@ class functions{
               $array2[$count-2]=$temp_name;
               $array2[$count-1]=$temp_gender;
              }
-            else{
-              if($array[$n+6]=='F'){
+            else {
+              if($array[$n+6]=='F') {
               $temp_name=$array2[$n+7];
               $temp_gender=$array2[$n+8];
               $array[$n+7]=$array[$count-2];
@@ -56,11 +55,11 @@ class functions{
         }
       }
     }
-  }
+  }//printing the details in tabular format
   echo "<table border=2px>";
-  for($k=0;$k<$count;$k++){
+  for($k=0;$k<$count;$k++) {
     if($k%2==0 || $k==0){
-      echo "<td>".$array2[$k]."</td>"/*"<br>"*/;
+      echo "<td>" . $array2[$k] . "</td>";
     }
   }
   echo "</table>";

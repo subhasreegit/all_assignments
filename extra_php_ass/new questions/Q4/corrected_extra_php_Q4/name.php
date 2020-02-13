@@ -1,10 +1,9 @@
-<?php 
+<?php //here we have taken the sitting details array
 
 
 
 
-class name{
-
+class name {
   public $array=array(0=>array('name'=>'Anand Thakur',
                                'gender'=>'M'),
                       1=>array('name'=>'Shakti Ray',
@@ -29,4 +28,3 @@ class name{
 }
 
 
-?>

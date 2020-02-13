@@ -1,14 +1,8 @@
-<?php
+<?php//here weare making the sitting arrangement
 
-
-
-
-class person{
-
+class person {
   public $seat=array();
-
-  public function __construct($name,$gender)
-  {      
+  public function __construct($name,$gender) {      
     $this->seat['name']=$name;
     $this->seat['gender']=$gender;
   }
@@ -17,4 +11,3 @@ class person{
 
 
 
-?>
