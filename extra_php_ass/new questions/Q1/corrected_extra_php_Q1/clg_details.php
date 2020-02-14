@@ -1,4 +1,5 @@
-<?php/*here we are making the array of object through this constructor class*/
+<?php
+/*here we are making the array of object through this constructor class*/
 
 /*Here we are making the college details array*/
 class clg_details {

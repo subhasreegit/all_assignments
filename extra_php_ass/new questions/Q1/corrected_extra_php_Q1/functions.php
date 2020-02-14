@@ -1,6 +1,7 @@
-<?php/*Here all the functions are finding the required results*/
+<?php
+//Here all the functions are finding the required results
 
-/*This function is checking the send is successfull or failed*/
+//This function is checking the send is successfull or failed
 class functions {      
   public function status2($val) {
     if($val==1) {
@@ -63,6 +64,6 @@ class functions {
       }
     }
   }
-}
+
 
 

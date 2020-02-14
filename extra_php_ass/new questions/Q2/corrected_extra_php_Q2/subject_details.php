@@ -9,4 +9,3 @@ class subject_details {
     $this->subject_details[$subject3] =array('code'=>$code3,'mm'=>$pass3);
   }
 }
-

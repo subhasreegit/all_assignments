@@ -1,4 +1,5 @@
-<?php//making the array of object of the clg details array
+<?php 
+//making the array of object of the clg details array
 
 /*making the array of object through this class*/
 class college {

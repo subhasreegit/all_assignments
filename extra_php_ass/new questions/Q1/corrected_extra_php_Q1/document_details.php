@@ -1,4 +1,5 @@
-<?php/*through this we are taking the details of the documents which are sent*/
+<?php
+/*through this we are taking the details of the documents which are sent*/
 
   //we are taking the docment details through this class
   class document_details {

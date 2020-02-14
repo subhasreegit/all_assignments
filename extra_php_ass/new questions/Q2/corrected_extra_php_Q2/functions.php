@@ -1,4 +1,4 @@
-<?php//here we wrote the functions to find the required result
+<?php //here we wrote the functions to find the required result
 
 // the result of the question
 class functions {
@@ -19,7 +19,7 @@ class functions {
     return $result;
   }
 
-  public function output($array,$array1,$array2) {// here we see the output
+  public function output($array,$array1,$array2) { // here we see the output
     $x=count($array2);
     $l=0;
     $temp1=array();
@@ -78,5 +78,3 @@ class functions {
     echo "</table>";
   }      
 }
-
-

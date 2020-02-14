@@ -11,4 +11,3 @@ class student_data {
     $this->s_data['grade'] = $grade;
   }
 }
-
