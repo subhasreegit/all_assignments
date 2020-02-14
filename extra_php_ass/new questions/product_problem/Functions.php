@@ -3,6 +3,9 @@
 
 
 //this function gives the sorted output depending upon the 'pd' and the 'sd'
+
+
+
 class Functions {
     public function Asc_sort($array) {        
       $price = array_column($array, 'pd');
